@@ -1,0 +1,2 @@
+User-agent: * Disallow: /
+#you found a flag! it is: brixelCTF{sadr0b0tz}

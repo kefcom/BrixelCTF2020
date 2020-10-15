@@ -1,0 +1,6 @@
+AuthGroupFile /dev/null
+AuthType Basic
+AuthUserFile /home/cfromage/domains/epsilom/public_html/pathfinder/admin/.htpasswd
+AuthName "Admin only!"
+require valid-user
+ErrorDocument 401 "Unauthorized Access"

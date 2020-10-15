@@ -1,0 +1,12 @@
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\bin\Debug\noPEEKing.exe.config
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\bin\Debug\noPEEKing.exe
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\bin\Debug\noPEEKing.pdb
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\bin\Debug\noPEEKing.xml
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.vbprojResolveAssemblyReference.cache
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.Form1.resources
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.Resources.resources
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.vbproj.GenerateResource.Cache
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.vbproj.CoreCompileInputs.cache
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.exe
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.xml
+c:\users\ernak\source\repos\noPEEKing\noPEEKing\obj\Debug\noPEEKing.pdb

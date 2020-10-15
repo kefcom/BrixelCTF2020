@@ -1,0 +1,6 @@
+AuthGroupFile /dev/null
+AuthType Basic
+AuthUserFile /home/kevinay5/domains/timesink.be/public_html/pathfinder/admin/.htpasswd
+AuthName "Admin only!"
+require valid-user
+ErrorDocument 401 "Unauthorized Access"
