@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Super secure login 4</title>
+</head>
+<body>
+<script type="text/javascript">
+	function verify() {
+		username = document.getElementById("the_username").value;
+		password = document.getElementById("the_password").value;
+		if(username == atob(readTextFile("username.txt")))
+		{
+			if(password == atob(readTextFile("password.txt")))
+			{
+				alert("Password Verified");
+			} else {
+				alert("Incorrect password");
+			}
+		}else{
+			alert("Incorrect username");
+		}
+		
+	}
+    function readTextFile(filePath) 
+    {      
+		var result = null;
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", filePath, false);
+		xmlhttp.send();
+		if (xmlhttp.status==200) {
+			result = xmlhttp.responseText;
+		}
+		return result;
+    } 
+</script>
+<div align="center">
+	<br>
+	<table bgcolor="#9e9e9e">
+		<tr>
+			<td colspan=2>Please log in:</td>
+		</tr>
+		<tr>
+			<td>Username: </td>
+			<td><input type="text" id="the_username"></td>
+		</tr>
+		<tr>
+			<td>Password: </td>
+			<td><input type="password" id="the_password"></td>
+		</tr>
+		<tr>
+			<td colspan=2 align="right"><input type="button" name="submit" value="log in" onclick="verify(); return false;"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

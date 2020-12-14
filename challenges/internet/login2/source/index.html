@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Super secure login 2</title>
+</head>
+<body>
+<script type="text/javascript">
+	function verify() {
+		password = document.getElementById("the_password").value;
+		split = 6;
+		if (password.substring(0, split) == 'brixel') 
+		{
+			if (password.substring(split*6, split*7) == '180790') 
+			{
+				if (password.substring(split, split*2) == 'CTF{st') 
+				{
+					if (password.substring(split*4, split*5) == '5cr1pt') 
+					{
+						if (password.substring(split*3, split*4) == 'd_j4v4') 
+						{
+							if (password.substring(split*5, split*6) == '_h3r3.') 
+							{
+								if (password.substring(split*2, split*3) == '1ll_b4') 
+								{
+									if (password.substring(split*7, split*8) == '54270}') 
+									{
+										alert("Password Verified")
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else 
+		{
+		alert("Incorrect password");
+		}
+	}
+</script>
+<div align="center">
+	<br>
+	<table bgcolor="#9e9e9e">
+		<tr>
+			<td colspan=2>Please log in:</td>
+		</tr>
+		<tr>
+			<td>Username: </td>
+			<td><input type="text" id="the_username"></td>
+		</tr>
+		<tr>
+			<td>Password: </td>
+			<td><input type="password" id="the_password"></td>
+		</tr>
+		<tr>
+			<td colspan=2 align="right"><input type="button" name="submit" value="log in" onclick="verify(); return false;"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
