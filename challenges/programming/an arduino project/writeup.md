@@ -29,5 +29,5 @@ ARDUINO PIN : 7-SEGMENT PIN
 9 : DP
 COMMON : 5V (with a 1K resistor)
 
-When you run the program, the 7-segment display will show you a message: ". . . . HELLO . FLAG . IS . 406798190332"
+When you run the program, the 7-segment display will show you a message: "406798190332"
 **accepted flags = 406798190332 / brixelCTF{406798190332}**

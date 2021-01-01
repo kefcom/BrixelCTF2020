@@ -6,13 +6,22 @@ if(isset($_GET['submit']))
 	{
 		if($_GET['filename'] == $_GET['title'] . ".txt")
 		{
-			//normal text upload
-			$thefilename = addslashes($_GET['title']) . ".txt";
-			$openfile = fopen(addslashes($_GET['title']) . ".txt","w");
-			fwrite($openfile,$_GET['content']);
-			fclose($openfile);
-			echo "your dad joke has been uploaded!<br><br><b>The joke is not in the index yet, I will review it first to keep you perverts out!</b><br><br>if you like, you can view it <a href=\"" . $thefilename . "\">here</a>";
-			die();
+			if(strpos($_GET['filename'],"../../") == true)
+			{
+				die("You're on the right track, but are you trying to be a bit naughty?");
+			}else{
+				if(substr($_GET['filename'],0,1) == "/")
+				{
+					die("You're on the right track, but are you trying to be a bit naughty?");
+				}
+				//normal text upload
+				$thefilename = addslashes($_GET['title']) . ".txt";
+				$openfile = fopen(addslashes($_GET['title']) . ".txt","w");
+				fwrite($openfile,$_GET['content']);
+				fclose($openfile);
+				echo "your dad joke has been uploaded!<br><br><b>The joke is not in the index yet, I will review it first to keep you perverts out!</b><br><br>if you like, you can view it <a href=\"" . $thefilename . "\">here</a>";
+				die();
+			}
 			
 		}else{
 			die("You're on the right track, but I'm not going to allow this in here, try that somewhere else!");
@@ -22,7 +31,7 @@ if(isset($_GET['submit']))
 		{
 			if(strpos($_GET['content'],"<html><title>DadJokes, your source of lame dad jokes</title>") === false)
 			{
-				echo "You are definatly on the right track here... but what are you trying to accomplish?";
+				echo "You are definitely on the right track here... but what are you trying to accomplish?";
 				die();
 			}else{
 				echo "Congratulations, the flag is brixelCTF{lamejoke}";

@@ -38,21 +38,20 @@ if(isset($page))
 	}else{
 		if(substr($page,0,6) == "admin/")
 		{
-			if(strlen($page) <= 6)
+			switch ($page)
 			{
-				die("page not found!");
-			}else{
-				if(file_exists($page) == true)
-				{
-					if($page == "admin/.htaccess")
-					{
-						include("admin/safe_htaccess");
-					}else{
-						include($page);
-					}
-				}else{
+				case "admin/.htaccess":
+					include("admin/safe_htaccess");
+					break;
+				case "admin/.htpasswd":
+					include("admin/.htpasswd");
+					break;
+				case "admin/index.php":
+					include("admin/index.php");
+					break;
+				default:
 					die("page not found!");
-				}				
+					break;
 			}
 		}else{
 			die("page not found!");
